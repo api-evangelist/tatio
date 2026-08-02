@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://www.tatio.io/llms.txt
+notes: >-
+  TaTiO's public website (tatio.io) is built on Wix and exposes the Wix Site MCP
+  server. The endpoint is live and returns a real tools/list. Tools are the
+  generic Wix Site MCP surface (site content, business details, guided API
+  calls), not a bespoke TaTiO recruitment/simulations API. No authentication is
+  required; only public site information is accessible.
+server:
+  name: tatio
+  transport: http
+  url: https://www.tatio.io/_api/mcp
+  authentication: none
+  provider: Wix Site MCP
+  docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
+tools:
+  - name: GetBusinessDetails
+    description: Retrieves business and site details such as timezone, email, phone, and address.
+  - name: SearchInSite
+    description: Searches the site for information.
+  - name: SearchSiteApiDocs
+    description: Retrieves the API documentation for the Wix business solutions installed on this site and informs the AI client how to use the APIs.
+  - name: GenerateVisitorToken
+    description: Creates a new visitor session and obtains a visitor access token for the site.
+  - name: CallWixSiteAPI
+    description: Calls API methods on the site to perform actions on a visitor's behalf, such as querying site data, booking an appointment, or starting a purchase.
+  - name: ReadFullDocsArticle
+    description: Fetches a complete article from the Wix developer documentation portal.
+  - name: ReadFullDocsMethodSchema
+    description: Fetches the full schema for a Wix API method; called before invoking the method via CallWixSiteAPI.
+capabilities:
+  - Get business details (contact info, location, hours)
+  - Discover products and services on offer
+  - Book services and make reservations
+  - Start a purchase and be directed to the site to complete checkout
+  - Ask questions and get relevant answers without browsing the site

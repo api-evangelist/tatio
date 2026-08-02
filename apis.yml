@@ -1,7 +1,28 @@
 aid: tatio
-name: Tatio
-description: Tatio is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tatio.png
+name: TaTiO
+description: >-
+  TaTiO is a recruitment and candidate-assessment platform that replaces
+  traditional resume-based screening with immersive, AI-driven virtual job
+  simulations. Candidates perform real job tasks - a forklift pre-shift check,
+  a customer service call - so employers see how they actually work rather than
+  how they describe themselves, producing a prediction score, a skills snapshot,
+  and a report drawn from roughly 150 data points per candidate. The platform
+  aims to increase application and engagement rates, reduce hiring mismatches,
+  and integrate with existing hiring tools (ATS) so candidate status syncs
+  automatically. TaTiO is a Techstars-backed company; its public website runs on
+  Wix and exposes a hosted Wix Site MCP endpoint for agentic AI access.
 url: https://raw.githubusercontent.com/api-evangelist/tatio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Hiring
+- Recruitment
+- Candidate Assessment
+- Job Simulations
+- Human Resources
+- Talent
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +50,23 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://tatio.io/
+  url: https://www.tatio.io/
+- type: MCPServer
+  url: mcp/tatio-mcp.yml
+- type: LLMsTxt
+  url: llms/tatio-llms.txt
+- type: DomainSecurity
+  url: security/tatio-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/tatiohr/
+- type: PrivacyPolicy
+  url: https://www.tatio.info/privacy-policy
+- type: TermsOfService
+  url: https://www.tatio.info/terms-of-use
+- type: SignUp
+  url: https://www.tatio.io/demo
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
